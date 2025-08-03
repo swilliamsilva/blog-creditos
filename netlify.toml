@@ -1,6 +1,6 @@
 [build]
   publish = "dist/blog-creditos"
-  command = "npm install && npm run build"
+  command = "npm install && npm install @angular/cli && npm run build"
 
 [build.environment]
   NODE_VERSION = "20"  
