@@ -1,0 +1,169 @@
+<div class="project-header">
+  <div class="container">
+    <div class="header-content">
+      <h1>API Consulta Créditos</h1>
+      <p>API RESTful desenvolvida com Spring Boot para consultar créditos constituídos vinculados a NFS-e</p>
+      <div class="header-links">
+        <a href="https://github.com/swilliamsilva/apiconsultacreditos" target="_blank" class="btn btn-primary">
+          <span>📁</span> Ver no GitHub
+        </a>
+        <a href="https://github.com/swilliamsilva/apiconsultacreditos/archive/refs/heads/develop.zip" target="_blank" class="btn btn-outline">
+          <span>⬇️</span> Download ZIP
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2">
+      <div class="content-section">
+        <h2>Sobre o Projeto</h2>
+        <p>
+          A API Consulta Créditos é uma aplicação robusta desenvolvida em Java 21 com Spring Boot 3.5.3, 
+          projetada para consultar créditos constituídos vinculados a Notas Fiscais de Serviço Eletrônicas (NFS-e).
+        </p>
+        <p>
+          O projeto inclui mensageria com Apache Kafka, testes automatizados completos e suporte a múltiplos 
+          bancos de dados, oferecendo uma solução escalável e confiável para gestão de créditos.
+        </p>
+      </div>
+      
+      <div class="tech-info">
+        <h3>Tecnologias Utilizadas</h3>
+        <div class="tech-list">
+          <div class="tech-item">
+            <span class="tech-icon">☕</span>
+            <div>
+              <strong>Java 21 (LTS)</strong>
+              <p>Versão mais recente com recursos modernos</p>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🍃</span>
+            <div>
+              <strong>Spring Boot 3.5.3</strong>
+              <p>Framework para desenvolvimento rápido</p>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">🗄️</span>
+            <div>
+              <strong>PostgreSQL / MariaDB</strong>
+              <p>Suporte a múltiplos bancos de dados</p>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">📨</span>
+            <div>
+              <strong>Apache Kafka</strong>
+              <p>Mensageria para processamento assíncrono</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Como Usar</h2>
+    
+    <div class="steps-container">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Clone o Repositório</h3>
+        <div class="code-block">
+          <code>git clone https://github.com/swilliamsilva/apiconsultacreditos.git</code>
+          <button class="copy-btn" onclick="copyToClipboard(this)">📋</button>
+        </div>
+        <p>Ou faça o download do ZIP e extraia os arquivos</p>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Configure o Ambiente</h3>
+        <div class="code-block">
+          <code>cd apiconsultacreditos<br>docker-compose up -d</code>
+          <button class="copy-btn" onclick="copyToClipboard(this)">📋</button>
+        </div>
+        <p>Isso iniciará PostgreSQL e MariaDB automaticamente</p>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Execute a Aplicação</h3>
+        <div class="code-block">
+          <code>mvn spring-boot:run</code>
+          <button class="copy-btn" onclick="copyToClipboard(this)">📋</button>
+        </div>
+        <p>A API estará disponível em http://localhost:8080</p>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <h3>Execute os Testes</h3>
+        <div class="code-block">
+          <code>mvn test</code>
+          <button class="copy-btn" onclick="copyToClipboard(this)">📋</button>
+        </div>
+        <p>Executa testes unitários e de integração</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-4">Endpoints da API</h2>
+    
+    <div class="endpoints-container">
+      <div class="endpoint-card">
+        <div class="method get">GET</div>
+        <div class="endpoint-info">
+          <h4>/api/creditos/{{'{numeroNfse}'}}</h4>
+          <p>Lista créditos por número da NFS-e</p>
+        </div>
+      </div>
+      
+      <div class="endpoint-card">
+        <div class="method get">GET</div>
+        <div class="endpoint-info">
+          <h4>/api/creditos/credito/{{'{numeroCredito}'}}</h4>
+          <p>Busca crédito específico por número</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Como Contribuir</h2>
+    
+    <div class="grid grid-3">
+      <div class="card contribute-card">
+        <h3>🍴 Fork do Projeto</h3>
+        <p>Faça um fork do repositório no GitHub para sua conta pessoal</p>
+        <a href="https://github.com/swilliamsilva/apiconsultacreditos/fork" target="_blank" class="btn btn-outline">Fork Agora</a>
+      </div>
+      
+      <div class="card contribute-card">
+        <h3>🔧 Desenvolva</h3>
+        <p>Crie uma branch para sua feature, implemente melhorias e teste localmente</p>
+        <div class="code-snippet">
+          <code>git checkout -b minha-feature</code>
+        </div>
+      </div>
+      
+      <div class="card contribute-card">
+        <h3>📤 Pull Request</h3>
+        <p>Envie um pull request com suas alterações para a branch develop</p>
+        <a href="https://github.com/swilliamsilva/apiconsultacreditos/compare" target="_blank" class="btn btn-outline">Criar PR</a>
+      </div>
+    </div>
+  </div>
+</section>
+

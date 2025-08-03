@@ -1,0 +1,37 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <a routerLink="/" class="nav-logo">
+      <h2>Blog Créditos</h2>
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/api-consulta-creditos" routerLinkActive="active" class="nav-link">API Consulta Créditos</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/frontend-creditos" routerLinkActive="active" class="nav-link">Frontend Créditos</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/contato" routerLinkActive="active" class="nav-link">Contato</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Blog Créditos - Desenvolvido por swilliamsilva</p>
+    <div class="footer-links">
+      <a href="https://github.com/swilliamsilva" target="_blank">GitHub</a>
+      <a href="https://github.com/swilliamsilva/apiconsultacreditos" target="_blank">API Repo</a>
+      <a href="https://github.com/swilliamsilva/frontend-creditos" target="_blank">Frontend Repo</a>
+    </div>
+  </div>
+</footer>
+
