@@ -20,7 +20,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "prebuild": "npm install -g @angular/cli@20.1.1",
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
