@@ -28,6 +28,7 @@
   "private": false,
   "license": "MIT",
   "dependencies": {
+    "@angular/cli": "^20.1.4",
     "@angular/animations": "^20.1.0",
     "@angular/common": "^20.1.0",
     "@angular/compiler": "^20.1.0",
@@ -42,7 +43,6 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular/cli": "^20.1.4",
     "@angular/compiler-cli": "^20.1.4",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.4.0",
