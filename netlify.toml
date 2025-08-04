@@ -5,6 +5,8 @@
 [build.environment]
   NODE_VERSION = "20"
   NG_CLI_ANALYTICS = "false"
+  NODE_ENV = "development"
+
 
 [[redirects]]
   from = "/*"
