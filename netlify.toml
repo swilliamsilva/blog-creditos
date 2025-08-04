@@ -3,7 +3,7 @@
   command = "npm install && npm run build"
 
 [build.environment]
-  NODE_VERSION = "20"  
+  NODE_VERSION = "20"
   NG_CLI_ANALYTICS = "false"
 
 [[redirects]]
